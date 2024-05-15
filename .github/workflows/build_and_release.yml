@@ -45,5 +45,5 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./dist/__main__.exe
-        asset_name: __main__.exe
+        asset_name: musicboardextract_gui.exe
         asset_content_type: application/octet-stream
