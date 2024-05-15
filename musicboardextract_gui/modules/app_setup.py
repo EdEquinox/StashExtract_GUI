@@ -11,7 +11,7 @@ def setup_app():
     app = customtkinter.CTk()
     
     app.title("MusicboardExtractor")
-    app.iconbitmap(musicboardextract_gui.ICON_PATH)
+    #app.iconbitmap(musicboardextract_gui.ICON_PATH)
     app.geometry(musicboardextract_gui.APP_GEOMETRY)
     app.resizable(False,False)
     

@@ -11,7 +11,7 @@ import os
 
 def extract_list(url, path):
     
-    if not url.startswith("https://www.musicboard.app/"):
+    if not url.startswith("https://musicboard.app/"):
         print("Invalid URL. Please enter a valid URL.")
         return 0
     
@@ -89,7 +89,7 @@ def extract_list(url, path):
             
 def extract_list_later(url, path):
     
-    if not url.startswith("https://www.musicboard.app/"):
+    if not url.startswith("https://musicboard.app/"):
         print("Invalid URL. Please enter a valid URL.")
         return 0
     
@@ -173,7 +173,7 @@ def extract_list_later(url, path):
             
 def extract_list_album(url, path):
     
-    if not url.startswith("https://www.musicboard.app/"):
+    if not url.startswith("https://musicboard.app/"):
         print("Invalid URL. Please enter a valid URL.")
         return 0
     
@@ -258,7 +258,7 @@ def extract_list_album(url, path):
             
 def extract_list_reviews(url, path):
     
-    if not url.startswith("https://www.musicboard.app/"):
+    if not url.startswith("https://musicboard.app/"):
         print("Invalid URL. Please enter a valid URL.")
         return 0
     

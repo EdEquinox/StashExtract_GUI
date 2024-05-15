@@ -1,7 +1,8 @@
 # MusicboardExtract_GUI
 
 ## Description
-MusicboardExtract_GUI is a graphical user interface (GUI) application for extracting music files from a music board.
+MusicboardExtract_GUI is a graphical user interface (GUI) application for extracting data from [MusicBoard](https://musicboard.app/), including lists and reviews.
+It is built using Python and utilizes various libraries and frameworks such as tkinter for the GUI, selenium for making HTTP requests, and BeautifulSoup for parsing HTML.
 
 ![App layout](image.png)
 
