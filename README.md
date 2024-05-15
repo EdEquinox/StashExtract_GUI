@@ -1,0 +1,42 @@
+# MusicboardExtract_GUI
+
+## Description
+MusicboardExtract_GUI is a graphical user interface (GUI) application for extracting music files from a music board.
+
+![App layout](image.png)
+
+## Features
+- User-friendly interface for easy navigation and interaction
+- Ability to extract your data from [MusicBoard](https://musicboard.app/)
+- Progress tracking during the extraction process
+- Error handling and notifications for any issues encountered
+
+## Installation
+1. Clone the repository: `git clone https://github.com/edequinox/MusicboardExtract_GUI.git`
+2. Install Python `pip install python`
+3. Install the required dependencies: `pip install -r requirements.txt`
+4. Start the application: `python -m musicboardextract_gui`
+
+## Standalone app
+- Download link: 
+
+## Usage
+1. Launch the application.
+2. Copy the link of the data you want to extract.
+3. Click the "Extract" button to initiate the extraction process.
+4. Monitor the progress and wait for the extraction to complete.
+5. Once the extraction is finished, the extracted file will be available in the specified output directory.
+
+## Contributing
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make your changes and commit them: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+For any questions or inquiries, please contact jmarquesnox@gmail.com.
