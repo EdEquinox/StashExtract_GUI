@@ -6,6 +6,7 @@ def animate_button(button: CTkButton):
     button.configure(state="disabled")
     button.configure(text="Loading...")
     
+    
 
 
 def setup_buttons(app):
