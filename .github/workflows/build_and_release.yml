@@ -32,23 +32,23 @@ jobs:
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v1
       env:
-        pythonLocation: C:\hostedtoolcache\windows\Python\3.12.3\x64
+        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       with:
-        tag_name: false
-        release_name: Release false
+        tag_name: v1.0.0
+        release_name: Release v1.0.0
         draft: false
         prerelease: false
-        token: ${{ secrets.MY_PAT }}
 
     - name: Upload Release Asset
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1
       env:
-        MY_PAT: ${{ secrets.MY_PAT }}
+        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./dist/musicboardextract_gui.exe
         asset_name: musicboardextract_gui.exe
         asset_content_type: application/octet-stream
+
