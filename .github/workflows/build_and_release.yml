@@ -34,7 +34,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+        MY_PAT: ${{ secrets.MY_PAT }}
       with:
         tag_name: ${{ github.ref == 'refs/heads/' && github.ref_name || github.ref == 'refs/tags/' && github.ref_name }}
         release_name: Release ${{ github.ref == 'refs/heads/' && github.ref_name || github.ref == 'refs/tags/' && github.ref_name }}
@@ -45,7 +45,7 @@ jobs:
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+        MY_PAT: ${{ secrets.MY_PAT }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./dist/musicboardextract_gui.exe
