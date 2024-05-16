@@ -14,19 +14,14 @@ from .modules.extract_data import extract_list_later
 from .modules.extract_data import extract_list_reviews
 import os
 import sys
+import pkg_resources
 
 # Define any global variables or constants here
 
 APP_GEOMETRY = "800x600"
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-if getattr(sys, 'frozen', False):
-    bundle_dir = sys._MEIPASS
-else:
-    bundle_dir = os.path.dirname(os.path.abspath(__file__))
-
-BACKGROUND_IMG = os.path.join(bundle_dir, "assets", "Sprinkle.png")
-ICON_PATH = os.path.join(bundle_dir, "assets", "logo_musicboard.ico")
+BACKGROUND_IMG = pkg_resources.resource_filename('musicboardextract_gui', 'assets/Sprinkle.png')
+ICON_PATH = pkg_resources.resource_filename('musicboardextract_gui', 'assets/logo_musicboard.ico')
 
 # Define any functions or classes here
 
