@@ -30,6 +30,9 @@ jobs:
       run: |
         pyinstaller musicboardextract.spec
 
+    - name: List dist contents
+      run: ls -l ./dist
+
     - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v1
