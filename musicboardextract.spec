@@ -23,7 +23,7 @@ exe = EXE(
     a.datas,
     [],
     exclude_binaries=True,
-    name='musicboardextract',
+    name='musicboardextract.exe',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -42,5 +42,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='musicboardextract',
+    name='musicboardextract.exe',
 )
