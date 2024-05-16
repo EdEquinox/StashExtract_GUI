@@ -48,7 +48,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist/musicboardextract_gui.exe
-        asset_name: musicboardextract_gui.exe
+        asset_path: ./dist/__main__.exe
+        asset_name: __main__.exe
         asset_content_type: application/octet-stream
 
