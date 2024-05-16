@@ -34,12 +34,13 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        MY_PAT: ${{ secrets.MY_PAT }}
+        pythonLocation: C:\hostedtoolcache\windows\Python\3.12.3\x64
       with:
-        tag_name: ${{ github.ref == 'refs/heads/' && github.ref_name || github.ref == 'refs/tags/' && github.ref_name }}
-        release_name: Release ${{ github.ref == 'refs/heads/' && github.ref_name || github.ref == 'refs/tags/' && github.ref_name }}
+        tag_name: false
+        release_name: Release false
         draft: false
         prerelease: false
+        token: ${{ secrets.MY_PAT }}
 
     - name: Upload Release Asset
       id: upload-release-asset 
