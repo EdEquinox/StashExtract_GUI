@@ -32,6 +32,9 @@ jobs:
 
     - name: List dist contents
       run: ls -l ./dist
+      
+    - name: List dist contents 2
+      run: ls -l ./dist/musicboardextract
 
     - name: Create Release
       id: create_release
@@ -51,7 +54,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist/musicboardextract/musicboardextract.exe
-        asset_name: musicboardextract.exe
+        asset_path: ./dist/musicboardextract/musicboardextract
+        asset_name: musicboardextract
         asset_content_type: application/octet-stream
 
