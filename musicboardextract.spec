@@ -5,7 +5,7 @@ a = Analysis(
     ['musicboardextract.py'],
     pathex=[],
     binaries=[],
-    datas=[('musicboardextract_gui/assets')],
+    datas=[('musicboardextract_gui/assets', 'assets')],
     hiddenimports=['musicboardextract_gui'],
     hookspath=[],
     hooksconfig={},
@@ -18,8 +18,6 @@ pyz = PYZ(a.pure)
 
 exe = EXE(
     pyz,
-    a.scripts,
-    a.scripts,
     a.binaries,
     a.zipfiles,
     a.datas,
