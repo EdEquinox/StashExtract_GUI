@@ -28,7 +28,7 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller --onefile --hidden-import=musicboardextract_gui musicboardextract.py
+        pyinstaller musicboardextract.spec
 
     - name: Create Release
       id: create_release
