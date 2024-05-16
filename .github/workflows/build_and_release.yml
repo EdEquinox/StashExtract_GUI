@@ -32,6 +32,9 @@ jobs:
 
     - name: List dist contents
       run: ls -l ./dist
+    
+    - name: List dist contents2
+      run: ls -l ./dist/dist
 
     - name: Create Release
       id: create_release
