@@ -6,7 +6,6 @@ import time
 try:
     app = setup_app()
     buttons = setup_buttons(app)
-    time.sleep(10)
     app.mainloop()
 except Exception:
     traceback.print_exc()
