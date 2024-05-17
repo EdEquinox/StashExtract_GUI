@@ -5,7 +5,7 @@ a = Analysis(
     ['musicboardextract.py'],
     pathex=[],
     binaries=[],
-    datas=[('musicboardextract_gui/assets', 'assets')],
+    datas=[('musicboardextract_gui/assets', 'musicboardextract_gui/assets')],
     hiddenimports=['musicboardextract_gui'],
     hookspath=[],
     hooksconfig={},
