@@ -28,7 +28,7 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller --onefile musicboardextract.spec
+        pyinstaller musicboardextract.spec
 
     - name: List dist contents
       run: ls -l ./dist
