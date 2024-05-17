@@ -4,7 +4,7 @@
 a = Analysis(
     ['musicboardextract.py'],
     pathex=[],
-    binaries=[('C:\\Windows\\System32\\api-ms-win-core-path-l1-1-0.dll', '.')],
+    binaries=[],
     datas=[('musicboardextract_gui/assets', 'assets')],
     hiddenimports=['musicboardextract_gui'],
     hookspath=[],
