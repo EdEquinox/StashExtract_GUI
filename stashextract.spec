@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['musicboardextract.py'],
+    ['stashextract.py'],
     pathex=[],
     binaries=[],
     datas=[('stashextract_gui/assets', 'stashextract_gui/assets')],
