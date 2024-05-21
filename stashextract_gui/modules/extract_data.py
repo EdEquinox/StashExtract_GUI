@@ -88,6 +88,82 @@ def extract_list(url, path):
         finally:
             if driver is not None:
                 driver.quit()
+                
+    elif 'reviews' in url:
+        
+        print("reviews")        
+        # Create a new instance of the Chrome driver
+        driver = webdriver.Chrome(options=options)
+        
+        try:
+
+            # Go to the URL
+            driver.get(str(url))
+
+            # Wait for the page to load
+            time.sleep(5)
+
+            print("Page loaded successfully.5")
+            
+            # Get the initial page height
+            last_height = driver.execute_script("return document.body.scrollHeight")
+
+            while True:
+                # Scroll down to the bottom of the page
+                driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.END)
+
+                # Wait for new content to load
+                time.sleep(2)
+
+                # Calculate new scroll height and compare with the last scroll height
+                new_height = driver.execute_script("return document.body.scrollHeight")
+                if new_height == last_height:
+                    break
+                last_height = new_height
+                
+             # Get the HTML of the webpage
+            html_content = driver.page_source
+            
+            # Parse the HTML content of the page with BeautifulSoup
+            soup = BeautifulSoup(html_content, 'html.parser')
+            
+            # Find all the divs containing the data
+            divs = soup.find_all('div', class_='recent-review p-0')
+            
+            # Open the CSV file
+            # Create the 'out' folder if it doesn't exist
+            if not os.path.exists('out'):
+                os.makedirs('out')
+            
+            # Open the CSV file
+            with open(path, 'w', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow(["Title", "Image URL", "Rating", "Review"])
+                
+                for div in divs:
+                    # Find the image and get its source
+                    img = div.find('img', class_='recent-review__image')
+                    img_src = img['data-src'] if img else None
+
+                    # Find the span with the title and get its text
+                    title_span = div.find('div', class_='font-semibold')
+                    title = title_span.text if title_span else None
+                    
+                    rating_span = div.find('span', class_='game__review-rating')
+                    rating = rating_span.text if rating_span else None
+                    
+                    review_span = div.find('p', class_='review-text')
+                    review = review_span.text if review_span else None
+                    
+                    writer.writerow([title, img_src, rating, review])
+            print("CSV file created successfully.5")
+        except WebDriverException as e:
+            print("WebDriverException occurred5.")
+            print(e)
+        finally:
+            if driver is not None:
+                driver.quit()
+    
     else:
 
         # Create a new instance of the Chrome driver
