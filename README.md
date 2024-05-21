@@ -1,14 +1,14 @@
 # StashExtract_GUI
 
 ## Description
-StashExtract_GUI is a graphical user interface (GUI) application for extracting data from [MusicBoard](https://musicboard.app/), including lists and reviews.
+StashExtract_GUI is a graphical user interface (GUI) application for extracting data from [stash](https://stash.games/), including lists and reviews.
 It is built using Python and utilizes various libraries and frameworks such as tkinter for the GUI, selenium for making HTTP requests, and BeautifulSoup for parsing HTML.
 
 ![App layout](image.png)
 
 ## Features
 - User-friendly interface for easy navigation and interaction
-- Ability to extract your data from [MusicBoard](https://musicboard.app/)
+- Ability to extract your data from [stash](https://stash.games/)
 - Progress tracking during the extraction process
 - Error handling and notifications for any issues encountered
 
