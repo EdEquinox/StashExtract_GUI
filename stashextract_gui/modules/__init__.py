@@ -9,6 +9,3 @@ from .loading_screen_setup import setup_loading_screen
 from .button_setup import setup_buttons
 from .input_module import input_module_label, input_module_form
 from .extract_data import extract_list
-from .extract_data import extract_list_album
-from .extract_data import extract_list_later
-from .extract_data import extract_list_reviews

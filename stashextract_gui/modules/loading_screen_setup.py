@@ -2,7 +2,7 @@
 
 import customtkinter
 from PIL import Image, ImageTk
-import musicboardextract_gui
+import stashextract_gui
 
 def setup_loading_screen(app: customtkinter.CTk) -> customtkinter.CTkFrame:
     loading_screen = customtkinter.CTkFrame(app)

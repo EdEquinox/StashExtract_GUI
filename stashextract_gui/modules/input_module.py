@@ -8,7 +8,7 @@ def input_module_label(app, text):
     
 def input_module_form(app):
     text_input = customtkinter.CTkEntry(app, corner_radius=0)
-    button = customtkinter.CTkButton(app, text="Extract!", fg_color='blue', corner_radius=0)
+    button = customtkinter.CTkButton(app, text="Extract!", fg_color='black', corner_radius=0)
     
     return text_input, button
 

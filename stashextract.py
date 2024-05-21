@@ -1,5 +1,5 @@
 
-from musicboardextract_gui import setup_app, setup_buttons
+from stashextract_gui import setup_app, setup_buttons
 import traceback
 import time
 
