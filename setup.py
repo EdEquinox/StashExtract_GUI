@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='MusicBoard_GUI',
+    name='StashExtract_GUI',
     version='0.1',
     packages=find_packages(),
-    description='MusicBoard GUI is a way to extract MusicBoard data.',
+    description='StashExtract_GUI is a way to extract Stash data.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='EdEquinox',
     author_email='jmarquesnox@gmail.com',
-    url='https://github.com/EdEquinox/MusicboardExtract_GUI',
+    url='https://github.com/EdEquinox/StashExtract_GUI',
     license='MIT',
     classifiers=[
         'Development Status :: 1 - Alpha',

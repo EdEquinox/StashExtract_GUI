@@ -1,7 +1,7 @@
-# MusicboardExtract_GUI
+# StashExtract_GUI
 
 ## Description
-MusicboardExtract_GUI is a graphical user interface (GUI) application for extracting data from [MusicBoard](https://musicboard.app/), including lists and reviews.
+StashExtract_GUI is a graphical user interface (GUI) application for extracting data from [MusicBoard](https://musicboard.app/), including lists and reviews.
 It is built using Python and utilizes various libraries and frameworks such as tkinter for the GUI, selenium for making HTTP requests, and BeautifulSoup for parsing HTML.
 
 ![App layout](image.png)
@@ -13,10 +13,10 @@ It is built using Python and utilizes various libraries and frameworks such as t
 - Error handling and notifications for any issues encountered
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/edequinox/MusicboardExtract_GUI.git`
+1. Clone the repository: `git clone https://github.com/EdEquinox/StashExtract_GUI.git`
 2. Install Python `pip install python`
 3. Install the required dependencies: `pip install -r requirements.txt`
-4. Start the application: `python -m musicboardextract_gui`
+4. Start the application: `python -m stashextract`
 
 ## Standalone app
 - Download link: 

@@ -37,7 +37,7 @@ def process_and_update(function: Any, url, app: customtkinter.CTk, buttons: cust
             notification.notify("MusicboardExtract", "There was an error on the extraction, try again!", timeout=1)
         
         for button in buttons:
-            button.configure(state='normal', text='Extract', fg_color='blue')
+            button.configure(state='normal', text='Extract', fg_color='black')
         for text in texts:
             text.configure(state='normal')
             text.delete(0, 'end')
