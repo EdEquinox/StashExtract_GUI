@@ -28,13 +28,13 @@ def process_and_update(function: Any, url, app: customtkinter.CTk, buttons: cust
        
         result = function(url,filepath)
         
-        notification._name = "MusicboardExtract"
+        #notification._name = "MusicboardExtract"
         
-        if result == 1:
-            notification.notify("MusicboardExtract", "Data extraction completed successfully!", timeout=1)
-        else:
+        #if result == 1:
+            #notification.notify("MusicboardExtract", "Data extraction completed successfully!", timeout=1)
+        #else:
             
-            notification.notify("MusicboardExtract", "There was an error on the extraction, try again!", timeout=1)
+            #notification.notify("MusicboardExtract", "There was an error on the extraction, try again!", timeout=1)
         
         for button in buttons:
             button.configure(state='normal', text='Extract', fg_color='black')
